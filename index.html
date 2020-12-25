@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Covid-19 Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Covid-19 Live Data</h1>
+        <br><br>
+        <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Total Cases</th>
+        <th>Total Deaths</th>
+        <th>Total Recovered</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="data"></tr>
+      <tr id="dataBr"></tr>
+    </tbody>
+        </table>
+        <br>
+        <button onclick="refreshData()" class="btn btn-danger btn-block">
+            Refresh Data
+        </button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
